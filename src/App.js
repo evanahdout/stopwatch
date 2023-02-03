@@ -12,7 +12,9 @@ function App() {
         
     };
 
-
+    const hadnleStartStop = () => {
+        
+    }
 
     return (
         <div id="application">
@@ -26,7 +28,7 @@ function App() {
             <button id="session-decrement">-</button>
             <div id="timer-label">Session</div>
             <div id="time-left">{timeLeft}</div>
-            <button id="start_stop">||</button>
+            <button id="start_stop">{handleStartStop}</button>
             <button id="reset">Reset</button>
         </div>
     )

@@ -1,6 +1,6 @@
 {
-  "name": "stopwatch",
-  "homepage": "https://evanahdout.github.io/stopwatch/",
+  "name": "timer",
+  "homepage": "https://evanahdout.github.io/timer/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

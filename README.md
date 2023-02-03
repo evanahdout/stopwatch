@@ -1,4 +1,4 @@
 # stopwatch
 
 ## preview
-[GitHub Page](https://evanahdout.github.io/stopwatch/)
+[GitHub Page](https://evanahdout.github.io/timer/)

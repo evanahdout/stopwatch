@@ -1,0 +1,128 @@
+:root {
+    --body-background-color: #606060;
+    --timer-background-color: #ededeb;  
+    --timer-features-color: #C0C0C0;
+    --text--color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.35;   
+    text-align: center;
+    color: var(--text--color);
+    font-weight: bold;
+}
+
+#application {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body-background-color);
+}   
+
+#timer {
+    border: 5px solid black;
+    background-color: var(--timer-background-color);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    margin-top: 5px;
+    font-size: 2.5rem;
+}
+
+#length-wrappers {
+    display: flex;
+}
+
+#length-wrappers #session-wrapper {
+    width: 200px;
+    margin: 10px 0;
+    margin-left: 15px;
+    background-color: var(--timer-features-color);
+    border: 3px solid black;
+    border-radius: 5%;
+}
+
+#length-wrappers #session-wrapper #session-label{
+    font-size: 1.5rem;
+} 
+
+#length-wrappers #session-wrapper #session-counter-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#length-wrappers #session-wrapper #session-counter-wrapper div {
+    font-size: 1.5rem;
+}
+
+#length-wrappers #gap {
+    width: 50px
+}
+#length-wrappers #break-wrapper {
+    width: 200px;
+    border: 3px solid black;
+    background-color: var(--timer-features-color);
+    border-radius: 5%;
+    margin: 10px 0;
+    margin-right: 15px
+}
+
+#length-wrappers #break-wrapper #break-label {
+    font-size: 1.5rem;
+}
+
+#length-wrappers #break-wrapper #break-counter-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#length-wrappers #break-wrapper #break-counter-wrapper div {
+    font-size: 1.5rem;
+}
+
+#time-wrapper {
+    margin: 20px 0;
+    padding: 5px 10px;
+    background-color: var(--timer-features-color);
+    border: 3px solid black;
+    border-radius: 5%;
+}
+
+#time-wrapper #timer-label {
+    font-size: 1.5rem;
+}
+
+#time-wrapper #time-left {
+    font-size: 3rem;
+}
+
+#settings-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    margin-bottom: 5px;
+}
+
+#settings-wrapper #start-stop {
+    display: flex;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

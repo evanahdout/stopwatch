@@ -75,18 +75,49 @@ function App() {
 
     return (
         <div id="application">
-            <div id="break-label">Break Length</div>
-            <div id="break-length">{breakLength}</div>
-            <button id="break-increment" onClick={handleBreakIncrement}>+</button>
-            <button id="break-decrement" onClick={handleBreakDecrement}>-</button>
-            <div id="session-label">Session Length</div>
-            <div id="session-length">{sessionLength}</div>
-            <button id="session-increment" onClick={handleSessionIncrement}>+</button>
-            <button id="session-decrement" onClick={handleSessionDecrement}>-</button>
-            <div id="timer-label">{isSession ? 'Session' : 'Break'}</div>
-            <div id="time-left">{getFormattedTime(timeLeft)}</div>
-            <button id="start_stop" onClick={handleStartStop}>Start/Stop</button>
-            <button id="reset" onClick={handleReset}>Reset</button>
+            <div id="timer">
+                <div id="header">Timer</div>
+                <div id="length-wrappers">
+                    <div id="session-wrapper">
+                        <div id="session-label">Session Length</div>
+                        <div id="session-counter-wrapper">
+                            <button id="session-decrement" onClick={handleSessionDecrement}>
+                                <i class="fa-solid fa-arrow-down fa-2x"></i>
+                            </button>
+                            <div id="session-length">{sessionLength}</div>
+                            <button id="session-increment" onClick={handleSessionIncrement}>
+                                <i class="fa-solid fa-arrow-up fa-2x"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="gap"></div>
+                    <div id="break-wrapper">
+                        <div id="break-label">Break Length</div>
+                        <div id="break-counter-wrapper">
+                            <button id="break-decrement" onClick={handleBreakDecrement}>
+                                <i class="fa-solid fa-arrow-down fa-2x"></i>
+                            </button>
+                            <div id="break-length">{breakLength}</div>
+                            <button id="break-increment" onClick={handleBreakIncrement}>
+                                <i class="fa-solid fa-arrow-up fa-2x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="time-wrapper">
+                    <div id="timer-label">{isSession ? 'Session' : 'Break'}</div>
+                    <div id="time-left">{getFormattedTime(timeLeft)}</div>
+                </div>
+                <div id="settings-wrapper">
+                    <button id="start_stop" onClick={handleStartStop}>
+                        <i class="fa-solid fa-play fa-2x"></i>
+                        <i class="fa-solid fa-pause fa-2x"></i>
+                    </button>
+                    <button id="reset" onClick={handleReset}>
+                        <i class="fa-solid fa-rotate fa-2x"></i>
+                    </button>
+                </div>
+            </div>
             <audio id="beep" ref={audioRef} src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"></audio>
         </div>
     )

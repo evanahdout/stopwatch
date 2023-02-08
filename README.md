@@ -1,7 +1,7 @@
-# timer
+# Timer
 
-## preview
+## Webpage
 [GitHub Page](https://evanahdout.github.io/timer/)
 
-## picture preview
+## Picture preview
 ![Timer webpage](timer.png)
